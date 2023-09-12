@@ -1,0 +1,41 @@
+html {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: black;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-y: hidden;
+    /* border: 1px solid yellow; */
+}
+
+#page-row {
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.menu-element {
+    color: whitesmoke;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+/* dna helix animation */
+
+.fade-in { 
+    animation: fadeIn 2s; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

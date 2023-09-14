@@ -28,11 +28,15 @@ body {
 h1 {
     color: whitesmoke;
 }
+/* modals */
+.modal-content {
+    background-color: black;
+    color: antiquewhite;
+}
 
 /* dna helix animation */
-
 .fade-in { 
-    animation: fadeIn 2s; 
+    animation: fadeIn 3s; 
 }
 
 @keyframes fadeIn {

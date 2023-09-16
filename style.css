@@ -23,20 +23,40 @@ body {
 
 .menu-element {
     color: whitesmoke;
+    margin-top: 2vh;
 }
 
 h1 {
     color: whitesmoke;
 }
+
 /* modals */
 .modal-content {
     background-color: black;
     color: white;
 }
 
+.modal-body-text {
+    font-size: 20px;
+}
+
+.modal-tech {
+    font-size: 18px;
+    color: lightslategray;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.bi {
+    font-size: 3rem
+}
+
+
 /* dna helix animation */
 .fade-in { 
-    animation: fadeIn 3s; 
+    animation: fadeIn 2s; 
 }
 
 @keyframes fadeIn {

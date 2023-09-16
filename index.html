@@ -1,135 +1,248 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thomas Bersez</title>
-    <link rel="icon" type="png" href="favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body style="background-color: black;">
 
-    <div class="container-fluid">
-      <div class="row flex-nowrap" id="page-row">
-        <!-- Left pane -->
-        <div class="col-auto me-auto d-flex">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas Bersez</title>
+  <link rel="icon" type="png" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-          <div class="flex-column d-flex">
-              <div class="container flex-nowrap mt-3 ms-3">
-                <h1 class="display-2">Hello, I'm Thomas</h1>
-                <h1 class="display-5">Swiss army knife bioinformatician</p>
+<body style="background-color: black;">
+
+  <div class="container-fluid">
+    <div class="row flex-nowrap" id="page-row">
+      <!-- Left pane -->
+      <div class="col-auto me-auto d-flex">
+
+        <div class="flex-column d-flex">
+          <div class="container flex-nowrap mt-3 ms-3">
+            <h1 class="display-2">Hello, I'm Thomas</h1>
+            <h1 class="display-5">Swiss army knife bioinformatician</p>
+          </div>
+          <div class="mt-auto">
+            <div class="container mb-4 ms-3">
+
+              <!-- About me -->
+              <h3 role="button" data-bs-toggle="modal" data-bs-target="#aboutme" class="menu-element">
+                About me
+              </h3>
+              <div class="modal fade" id="aboutme" tabindex="-1" aria-labelledby="aboutmelabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="aboutmelabel">
+                        Hello, I'm Thomas...
+                      </h1>
+                      <div data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      <p class="modal-body-text">
+                        ... a <b>Swiss army knife</b> bioinformatician.
+                      </p>
+                      <p class="modal-body-text justify">
+                        Why such a title you may ask ? Simply because my passion for bioinformatics and 
+                        computer science has pushed me to endorse various roles, to learn mutiple technologies
+                        and work in various fields such as agronomical sciences, software devolopement and
+                        human health.
+                      </p>
+                      <p class="modal-body-text justify">
+                        I thrive learning new things everyday and belive that curiosity, commitment and
+                        a can-do attitude are the perfect mix for good engineering. I do my best to cultivate
+                        those qualities!
+                      </p>
+                      <p class="modal-body-text justify">
+                        When not coding, I play bass. I've been an amateur musician for about 10 years now!
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="mt-auto">
-                <div class="container mb-4 ms-3">
 
-                  <!-- About me -->
-                  <h3 role="button" data-bs-toggle="modal" data-bs-target="#aboutme" class="menu-element">
-                    About me
-                  </h3>
-                  <div class="modal fade" id="aboutme" tabindex="-1" aria-labelledby="aboutmelabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="aboutmelabel">
-                            Hello, I'm Thomas
-                          </h1>
-                          <div data-bs-theme="dark">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                        </div>
-                        <div class="modal-body">
-                          place holding text
-                        </div>
+              <!-- Experience -->
+              <h3 role="button" data-bs-toggle="modal" data-bs-target="#experience" class="menu-element">
+                Experience
+              </h3>
+              <div class="modal fade" id="experience" tabindex="-1" aria-labelledby="experiencelabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="experiencelabel">
+                        Professional experiences
+                      </h1>
+                      <div data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                        <p class="modal-body-text">
+                          <b>Data analysis manager</b> and <b>Associate</b> - <a href="https://www.cgenetix.com/">CGenetix</a> - September 2022 - Ongoing - Paris, France
+                        </p>
+                        <p class="modal-body-text justify">
+                          <b>I'm currently the head of data analysis and software devolopement at CGenetix, a Parisian startup.</b>
+                        </p>
+                        <p class="modal-body-text justify">
+                          CGenetix develops a liquid biopsy kit to diagnose kidney graph rejections using a mix of bioinformatics, mollecular
+                          biology, microfluidics and machine learning. In this context, my daily task include the design, planification and 
+                          implementation of the company in-house tools, cloud servers and client-end SAS.
+                        </p>
+                        <p class="modal-body-text justify">
+                          As associate, I take part in meetings with the board, investors and clinicians. It's a great opportunity to
+                          learn about buisness, fund-raising and communication!
+                        </p>
+                        <p class="modal-tech">
+                          Technologies : Python, Tensorflow, Pandas, Django, Nextflow, R, Go, Docker, GCP, Kubernetes
+                        </p>
+                        <hr/>
+                      </div>
+                      <div>
+                        <p class="modal-body-text">
+                          <b>R&D bioinformatician</b> - <a href="https://geneviatechnologies.com/">Genevia Technologies</a> - August 2019 - September 2022 - Tampere, Finland
+                        </p>
+                        <p class="modal-body-text justify">
+                          For 3 years, I worked as a bioinformatician at Genevia Technologies, a Finnish bioinformatics out-sourcing company.
+                        </p>
+                        <p class="modal-body-text justify">
+                          As a member of the RnD team, I developed a codebase of pipelines, tools and workflows aiming at improving the company
+                          productivity and reducing the need for boiler-plate to kickstart clients projects. For instance, I developed a flexible RNA
+                          sequencing analysis pipeline ruining a fastq-to-differancial-expression-analysis worflow from a single command line.
+                        </p>
+                        <p class="modal-body-text justify">
+                          I also took part in the developement of web-based machine learning applications for the company customers. Doing so I learned
+                          a lot about UX design, web developement and cloud native applications.
+                        </p>
+                        <p class="modal-tech">
+                          Technologies : Python, Tensorflow, Pandas, Django, Snakemake, R, Docker, Singularity, GCP, Slurm, Kubernetes
+                        </p>
+                        <hr/>
+                      </div>
+                      <div>
+                        <p class="modal-body-text">
+                          <b>Bioinformatician</b> - <a href="https://www.inrae.fr/en">INRAe</a> - January 2019 - July 2022 - Avignon, France
+                        </p>
+                        <p class="modal-body-text justify">
+                          PLACE HOLDING
+                        </p>
+                        <p class="modal-tech">
+                          Technologies : Python, Snakemake, R, C, Singularity
+                        </p>
+                        <hr/>
+                      </div>
+                      <div>
+                        <p class="modal-body-text">
+                          <b>Bioinformatician trainee</b> - <a href="https://www.inserm.fr/">INSERM</a> - March 2018 - July 2018 - Paris, France
+                        </p>
+                        <p class="modal-body-text justify">
+                          PLACE HOLDING
+                        </p>
+                        <p class="modal-tech">
+                          Technologies : Python, Snakemake, R, Perl
+                        </p>
                       </div>
                     </div>
                   </div>
-                  
-                  <!-- Experience -->
-                  <h3 role="button" data-bs-toggle="modal" data-bs-target="#experience" class="menu-element">
-                    Experience
-                  </h3>
-                  <div class="modal fade" id="experience" tabindex="-1" aria-labelledby="experiencelabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="experiencelabel">
-                            Work experiences
-                          </h1>
-                          <div data-bs-theme="dark">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                        </div>
-                        <div class="modal-body">
-                          place holding text
-                        </div>
+                </div>
+              </div>
+
+              <!-- Education -->
+              <h3 role="button" data-bs-toggle="modal" data-bs-target="#education" class="menu-element">
+                Education
+              </h3>
+              <div class="modal fade" id="education" tabindex="-1" aria-labelledby="educationlabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="educationlabel">
+                        Education
+                      </h1>
+                      <div data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                     </div>
-                  </div>
-
-                  <!-- Education -->
-                  <h3 role="button" data-bs-toggle="modal" data-bs-target="#education" class="menu-element">
-                    Education
-                  </h3>
-                  <div class="modal fade" id="education" tabindex="-1" aria-labelledby="educationlabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="educationlabel">
-                            Education
-                          </h1>
-                          <div data-bs-theme="dark">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                        </div>
-                        <div class="modal-body">
-                          place holding text
-                        </div>
-                      </div>
+                    <div class="modal-body">
+                      place holding text
                     </div>
                   </div>
+                </div>
+              </div>
 
-                  <!-- Socials -->
-                  <h3 role="button" data-bs-toggle="modal" data-bs-target="#socials" class="menu-element">
-                    Socials
-                  </h3>
-                  <div class="modal fade" id="socials" tabindex="-1" aria-labelledby="socialslabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="socialslabel">
-                            Socials
-                          </h1>
-                          <div data-bs-theme="dark">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <!-- Socials -->
+              <h3 role="button" data-bs-toggle="modal" data-bs-target="#socials" class="menu-element">
+                Socials
+              </h3>
+              <div class="modal fade" id="socials" tabindex="-1" aria-labelledby="socialslabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="socialslabel">
+                        Follow me
+                      </h1>
+                      <div data-bs-theme="dark">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <div class="row row align-items-center">
+                          <div class="col-8">
+                            <p class="modal-body-text">
+                              On Github (I swear I'll finish all my side projects someday!)
+                            </p>
+                          </div>
+                          <div class="col-auto ms-auto">
+                            <a href="https://github.com/tbersez">
+                              <i class="bi bi-github"></i>
+                            </a>
                           </div>
                         </div>
-                        <div class="modal-body">
-                          place holding text
+                        <div class="row row align-items-center">
+                          <div class="col-8">
+                            <p class="modal-body-text">
+                              On Linkedin. I might post something interesting!
+                            </p>
+                          </div>
+                          <div class="col-auto ms-auto">
+                            <a href="https://linkedin.com/in/thomas-bersez-4103b515b">
+                              <i class="bi bi-linkedin"></i>
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-          </div>
-
-        </div>
-        <!-- Right pane -->
-        <div class="col-3 d-none d-md-block d-flex">
-
-          <div class="container">
-            <div class="row align-items-center" style="height: 100vh;">
-              <div class="fade-in">
-                <img src="101d.jpg" alt="101d.jpg" class="img-fluid">
-              </div>
             </div>
           </div>
-
         </div>
+
+      </div>
+      <!-- Right pane -->
+      <div class="col-3 d-none d-md-block d-flex">
+
+        <div class="container">
+          <div class="row align-items-center" style="height: 100vh;">
+            <div class="fade-in">
+              <img src="101d.jpg" alt="101d.jpg" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

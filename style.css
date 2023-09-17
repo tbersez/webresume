@@ -30,6 +30,11 @@ h1 {
     color: whitesmoke;
 }
 
+hr {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
 /* modals */
 .modal-content {
     background-color: black;

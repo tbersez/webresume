@@ -1,5 +1,19 @@
-# webresume
+# Webresume
 
-My web resume.
+## Setup
 
-Please visit www.thomasbersez.com.
+Create the bucket (one time).
+
+```bash
+gcloud config set project webportfolio-399411
+gcloud services enable storage.googleapis.com
+gsutil mb -l us-east1 -b on gs://thomasbersez/
+gsutil iam ch allUsers:objectViewer gs://thomasbersez
+gsutil web set -m index.html gs://thomasbersez
+```
+
+Upload files:
+
+```bash
+gsutil cp -r index.html src gs://thomasbersez
+```

@@ -19,8 +19,8 @@
             background-image: url('src/images/illustration.jpg');
             background-size: cover;
             background-position: center;
-            filter: grayscale(90%) brightness(100%) saturate(10%);
-            background-color: rgba(255, 255, 255, 0.92); /* strong white wash */
+            filter: grayscale(100%) brightness(90%) saturate(10%);
+            background-color: rgba(255, 255, 255, 0.9);
             background-blend-mode: lighten;
             z-index: -1;
         }
@@ -94,7 +94,8 @@
         </div>
         <div class="container mt-4">
             <div class="row align-items-center">
-                <div class="col-lg-12 text-center text-lg-start mb-4 mb-lg-0">
+                <div class="col-lg-9 text-center text-lg-start mb-4 mb-lg-0">
+                    <p class="lead mb-4"><em><strong>Data scientist, bioinformatician and IT enthusiast</strong></em></p>
                     <p class="lead text-muted">
                         I blend data and code to turn complexity into clarity.
                     </p>
@@ -105,6 +106,9 @@
                         With 7 years of international experience in bioinformatics and data science, I bring a global, cross-disciplinary perspective to every project.
                     </p>
                 </div>
+                <div class="col-lg-3 text-center text-lg-start mb-4 mb-lg-0">
+                    <img class="img-fluid rounded-circle float-start" src="src/images/me.jpeg" alt="profile picture">
+                </div>
             </div>
         </div>
         <div class="container mt-4">
@@ -114,7 +118,59 @@
     </section>
     <!-- References -->
     <section id="references" class="content-section d-none">
-        <h2>References</h2>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">My work</h1>
+                <p class="text-muted">Some examples of what I've delivered for teams around the world.</p>
+            </div>
+            <div class="overflow-auto" style="max-height: 600px;">
+                <div class="d-flex flex-column gap-4">
+                    <!-- Genevia 1 -->
+                    <div class="card w-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h5 class="fw-bold">Genevia Technologies</h5>
+                                </div>
+                                <div class="col-auto">
+                                    <p class="text-muted">Aug. 2019 - Sept. 2022</p>
+                                </div>
+                            </div>
+                            <p class="lead mb-2">R&D bioinformatician</p>
+                            <p class="mb-2">Over three years, I built and maintained a set of reliable NGS pipelines that handled everything from QC to reporting, so scientists could focus on the real biological and clinical questions. The workflows ran smoothly on HPC systems, making it easy to scale up when needed!</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">Python</span>
+                                <span class="badge bg-secondary">R</span>
+                                <span class="badge bg-secondary">Snakemake</span>
+                                <span class="badge bg-secondary">Google Cloud PLatform</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CGenetix -->
+                    <div class="card w-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h5 class="fw-bold">Genevia Technologies</h5>
+                                </div>
+                                <div class="col-auto">
+                                    <p class="text-muted">Aug. 2019 - Sept. 2022</p>
+                                </div>
+                            </div>
+                            <p class="lead mb-2">R&D bioinformatician</p>
+                            <p class="mb-2">Over three years, I built and maintained a set of reliable NGS pipelines that handled everything from QC to reporting, so scientists could focus on the real biological and clinical questions. The workflows ran smoothly on HPC systems, making it easy to scale up when needed!</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary">Python</span>
+                                <span class="badge bg-secondary">R</span>
+                                <span class="badge bg-secondary">Snakemake</span>
+                                <span class="badge bg-secondary">Google Cloud PLatform</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </div>
     </section>
     <!-- Contact -->
     <section id="contact" class="content-section d-none">
@@ -156,8 +212,11 @@
             </div>
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-6 text-center text-muted">
-                    <p><strong>Email:</strong> thomasbersez@gmail.com</p>
-                    <p><strong>Phone:</strong> +33 6 68 43 00 74</p>
+                    <p class="text-muted"> 
+                        <a class="link-secondary" href="https://www.linkedin.com/in/thomas-bersez-4103b515b">
+                            Or, reach out on LinkedIn
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>

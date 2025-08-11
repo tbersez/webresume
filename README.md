@@ -2,7 +2,7 @@
 
 ## Setup
 
-Create the bucket (one time).
+Create and configure the bucket (one time).
 
 ```bash
 gcloud config set project webportfolio-399411
@@ -17,3 +17,5 @@ Upload files:
 ```bash
 gsutil cp -r index.html src gs://thomasbersez
 ```
+
+The website is served at `https://storage.googleapis.com/thomasbersez/index.html`.

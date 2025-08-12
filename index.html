@@ -70,6 +70,8 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home" onclick="showSection('home')">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services"
+                            onclick="showSection('services')">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#references"
                             onclick="showSection('references')">References</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"
@@ -132,10 +134,62 @@
                 </div>
             </div>
             <div class="container mt-4">
-                <a href="#home" onclick="showSection('references')" class="btn btn-outline-secondary btn-lg me-3"><i
-                        class="fa-solid fa-magnifying-glass"></i> See my references</a>
+                <a href="#services" onclick="showSection('services')" class="btn btn-outline-secondary btn-lg"><i
+                    class="fa-solid fa-bell-concierge"></i> My services</a>
+                <a href="#home" onclick="showSection('references')" class="ms-3 btn btn-outline-secondary btn-lg me-3"><i
+                        class="fa-solid fa-magnifying-glass"></i> References</a>
                 <a href="#contact" onclick="showSection('contact')" class="btn btn-outline-secondary btn-lg"><i
                         class="fa-solid fa-envelope"></i> Contact me</a>
+            </div>
+        </section>
+        <!-- Services -->
+        <section id="services" class="content-section d-none">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold">Services</h1>
+                    <p class="text-muted">What I offer to you and your team.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 border-end pr-4">
+                        <h3 class="mb-4" style="color: #002244">Consulting and bespoke development</h3>
+                        <p class="lead text-muted">
+                            I help researchers and companies turn complex biological data into clear, actionable
+                            insights. From planning your sequencing project to processing NGS data, I bring both
+                            scientific expertise and practical experience.
+                        </p>
+                        <p class="lead text-muted">
+                            I also develop AI solutions, web platforms,
+                            and custom applications to make your workflows faster and smarter.
+                        </p>
+                        <p class="lead text-muted">
+                            The first step? Book a meeting so we can talk about your project and explore the best way
+                            forward.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 pr-4">
+                        <h3 class="mb-4" style="color: #002244">Turn key solutions</h3>
+                        <p class="lead text-muted">
+                            I provide turnkey bioinformatics and data science solutions built for speed, scalability,
+                            and ease of use.
+                        </p>
+                        <p class="lead text-muted">
+                            From high-performance NGS processing pipelines to intuitive no-code AI
+                            applications, my software runs entirely in the cloud — delivering reliable, reproducible
+                            results without the burden of local infrastructure.
+                        </p>
+                        <p class="lead text-muted">
+                            Whether you need to process terabytes of
+                            genomic data or empower your team to harness AI without writing a single line of code, my
+                            solutions are ready to launch and optimized for your workflow from day one.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <h4 class="fw-bold">Wish to know more?</h4>
+                    <a class="link-secondary" href="#contact" onclick="showSection('contact')">
+                        Contact me
+                    </a>
+                </div>
             </div>
         </section>
         <!-- References -->
@@ -334,18 +388,18 @@
     </script>
     <!-- Contact form alert -->
     <script>
-        document.getElementById("contactForm").addEventListener("submit", function(e) {
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
             e.preventDefault();
-            
+
             const form = e.target;
             const data = new FormData(form);
             const successMsg = document.getElementById("successMessage");
             const errorMsg = document.getElementById("errorMessage");
-        
+
             // Hide alerts first
             successMsg.classList.add("d-none");
             errorMsg.classList.add("d-none");
-        
+
             fetch(form.action, {
                 method: "POST",
                 body: data,

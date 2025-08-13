@@ -45,6 +45,25 @@
             color: #002244;
         }
 
+        #refcards {
+            height: calc(100vh - 300px);
+        }
+
+        .fade-top {
+            -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 100%);
+            mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 100%);
+        }
+
+        .fade-bottom {
+            -webkit-mask-image: linear-gradient(to top, transparent 0%, black 10%, black 100%);
+            mask-image: linear-gradient(to top, transparent 0%, black 10%, black 100%);
+        }
+
+        .fade-top.fade-bottom {
+            -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+            mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+        }
+
         @keyframes blink {
 
             0%,
@@ -72,8 +91,8 @@
                     <li class="nav-item"><a class="nav-link" href="#home" onclick="showSection('home')">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services"
                             onclick="showSection('services')">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#references"
-                            onclick="showSection('references')">References</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#references" onclick="showSection('references')">My
+                            work</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"
                             onclick="showSection('contact')">Contact</a></li>
                     <li class="nav-item">
@@ -123,7 +142,7 @@
                             cloud-based platforms that process high volumes of data with speed and precision.
                         </p>
                         <p class="lead text-muted">
-                            With 7 years of international experience in bioinformatics and data science, I bring a
+                            With a master's degree in IT and 7 years of international experience in bioinformatics and data science, I bring a
                             global, cross-disciplinary perspective to every project.
                         </p>
                     </div>
@@ -138,7 +157,7 @@
                         class="fa-solid fa-bell-concierge"></i> My services</a>
                 <a href="#home" onclick="showSection('references')"
                     class="ms-3 btn btn-outline-secondary btn-lg me-3"><i class="fa-solid fa-magnifying-glass"></i>
-                    References</a>
+                    My work</a>
                 <a href="#contact" onclick="showSection('contact')" class="btn btn-outline-secondary btn-lg"><i
                         class="fa-solid fa-envelope"></i> Contact me</a>
             </div>
@@ -200,23 +219,22 @@
                     <h1 class="fw-bold">My work</h1>
                     <p class="text-muted">Some examples of what I've delivered for teams around the world.</p>
                 </div>
-                <div>
+                <div id="refcards" class="overflow-auto">
                     <div>
                         <!-- Senior data scientist -->
-                        <div class="card w-100 shadow-sm border-0 mb-3">
+                        <div class="card w-100 shadow border-0 mb-3">
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col">
                                         <h5 class="fw-bold">
                                             <a href="https://www.deepscandx.com" target="_blank"
-                                                rel="noopener noreferrer"
-                                                class="link-secondary">
+                                                rel="noopener noreferrer" class="link-secondary">
                                                 DeepScan Diagnostics
                                             </a>
                                         </h5>
                                     </div>
                                     <div class="col-auto">
-                                        <p class="text-muted">Since Jan 2025</p>
+                                        <p class="text-muted">Helsinki, Finland — Since Jan 2025</p>
                                     </div>
                                 </div>
                                 <p class="lead mb-2">Senior data specialist</p>
@@ -234,14 +252,14 @@
                         </div>
 
                         <!-- Freelance -->
-                        <div class="card w-100 shadow-sm border-0 mb-3">
+                        <div class="card w-100 shadow border-0 mb-3">
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col">
                                         <h5 class="fw-bold">Freelance</h5>
                                     </div>
                                     <div class="col-auto">
-                                        <p class="text-muted">Since July 2024</p>
+                                        <p class="text-muted">Bordeaux, France — Since July 2024</p>
                                     </div>
                                 </div>
                                 <p class="lead mb-2">Consultant — Data Science & Bioinformatics</p>
@@ -260,20 +278,19 @@
                         </div>
 
                         <!-- Genevia 2 -->
-                        <div class="card w-100 shadow-sm border-0 mb-3">
+                        <div class="card w-100 shadow border-0 mb-3">
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col">
                                         <h5 class="fw-bold">
                                             <a href="https://geneviatechnologies.com/" target="_blank"
-                                                rel="noopener noreferrer"
-                                                class="link-secondary">
+                                                rel="noopener noreferrer" class="link-secondary">
                                                 Genevia Technologies
                                             </a>
                                         </h5>
                                     </div>
                                     <div class="col-auto">
-                                        <p class="text-muted">Dec. 2023 - Dec. 2024</p>
+                                        <p class="text-muted">Tampere, Finland — Dec. 2023 - Dec. 2024</p>
                                     </div>
                                 </div>
                                 <p class="lead mb-2">Project manager</p>
@@ -291,20 +308,19 @@
                         </div>
 
                         <!-- CGenetix -->
-                        <div class="card w-100 shadow-sm border-0 mb-3">
+                        <div class="card w-100 shadow border-0 mb-3">
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col">
                                         <h5 class="fw-bold">
                                             <a href="https://www.cgenetix.com/" target="_blank"
-                                                rel="noopener noreferrer"
-                                                class="link-secondary">
+                                                rel="noopener noreferrer" class="link-secondary">
                                                 CGenetix
                                             </a>
                                         </h5>
                                     </div>
                                     <div class="col-auto">
-                                        <p class="text-muted">Oct. 2022 - Dec. 2023</p>
+                                        <p class="text-muted">Paris, France — Oct. 2022 - Dec. 2023</p>
                                     </div>
                                 </div>
                                 <p class="lead mb-2">Data analysis manager</p>
@@ -321,20 +337,19 @@
                         </div>
 
                         <!-- Genevia 1 -->
-                        <div class="card w-100 shadow-sm border-0 mb-3">
+                        <div class="card w-100 shadow border-0 mb-3">
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col">
                                         <h5 class="fw-bold">
                                             <a href="https://geneviatechnologies.com/" target="_blank"
-                                                rel="noopener noreferrer"
-                                                class="link-secondary">
+                                                rel="noopener noreferrer" class="link-secondary">
                                                 Genevia Technologies
                                             </a>
                                         </h5>
                                     </div>
                                     <div class="col-auto">
-                                        <p class="text-muted">Aug. 2019 - Sept. 2022</p>
+                                        <p class="text-muted">Tampere, Finland — Aug. 2019 - Sept. 2022</p>
                                     </div>
                                 </div>
                                 <p class="lead mb-2">R&D bioinformatician</p>
@@ -486,6 +501,20 @@
         }
 
         typeLoop();
+    </script>
+    <script>
+        const refcards = document.getElementById('refcards');
+
+        function updateFade() {
+            const atTop = refcards.scrollTop === 0;
+            const atBottom = Math.ceil(refcards.scrollTop + refcards.clientHeight) >= refcards.scrollHeight;
+
+            refcards.classList.toggle('fade-top', !atTop);
+            refcards.classList.toggle('fade-bottom', !atBottom);
+        }
+
+        refcards.addEventListener('scroll', updateFade);
+        window.addEventListener('load', updateFade); 
     </script>
     <!-- Contact form alert -->
     <script>
